@@ -6,7 +6,7 @@ def compute_rmse(observed, ideal):
     count = 0
     for got, wanted in zip(observed, ideal):
         err_2 = (got - wanted) ** 2
-        breakpoint()
+        breakpoint() # print(count)
         total_err_2 += err_2
         count += 1
     mean_err = total_err_2 / count

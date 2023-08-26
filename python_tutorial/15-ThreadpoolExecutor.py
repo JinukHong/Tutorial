@@ -31,8 +31,8 @@ def func2():
     # 멀티스레드 사용
     start = time.time()
 
-    with ThreadPoolExecutor(max_workers=5) as pool:
-        for _ in range(5):
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        for _ in range(5): # 5개 돌리니깐
             task = pool.submit(wait_second)
 
     end = time.time()
@@ -42,5 +42,5 @@ def func2():
 
     
 if __name__ == "__main__":
-    # func1()
+    #func1()
     func2()

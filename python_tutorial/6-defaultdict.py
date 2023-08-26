@@ -1,9 +1,10 @@
 from collections import defaultdict
 
 def func1():
-    a = defaultdict(int)
+    a = defaultdict(int) ## 따라가면 class -> __missing__ -> 
     b = defaultdict(list)
     c = defaultdict(lambda: len(c))
+    #c = {lambda: len(c)}
     for i in range(10):
         a[i] = f'{i}'
 

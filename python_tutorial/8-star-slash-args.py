@@ -1,6 +1,6 @@
 def func1():
     # 가변인자 사용
-    def args(a, b, /, *, c, d):
+    def args(a, b, /, *, c, d): # 이게 모냐? / 앞에는 무조건 위치인자, * 뒤에는 키워드 인자.
         print("a", a)
         print("b", b)
         print("c", c)

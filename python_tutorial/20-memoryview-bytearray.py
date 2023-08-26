@@ -2,6 +2,7 @@ import timeit
 import random
 import string
 
+# 메모리뷰 큰 데이터에 대해서 쓰면 좋다. 읽기만 하는거면 memory view 쓰면 좋고 수정까지 할거면 byte array
 
 strings = string.digits + string.ascii_lowercase
 data = ''

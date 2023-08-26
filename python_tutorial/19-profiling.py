@@ -4,6 +4,8 @@ from pstats import Stats
 from bisect import bisect_left
 from random import randint
 
+# 함수 얼마나 실행됐고 몇초 실행됐는지.
+
 def insert_value1(array, value):
     for i, existing in enumerate(array):
         if existing > value:
@@ -60,5 +62,5 @@ def func2():
 
     
 if __name__ == "__main__":
-    # func1()
-    func2()
+    func1()
+    #func2()

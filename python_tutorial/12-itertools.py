@@ -29,4 +29,5 @@ def func4():
 if __name__ == "__main__":
     # func1()
     # func2()
-    func3()
+    #func3()
+    func4()
